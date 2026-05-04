@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>IMIDECO — Architecte d'intérieur à Casablanca</title>
+<meta name="description" content="IMIDECO, agence d'architecture d'intérieur à Casablanca. Conseil personnalisé, produits de qualité et équipe professionnelle." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="#hero" class="brand" id="brand">IMIDECO</a>
+    <nav class="main-nav" id="mainNav">
+      <a href="#about">L'agence</a>
+      <a href="#services">Services</a>
+      <a href="#reviews">Avis</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact-form-section" class="cta-mini">Devis gratuit</a>
+    <button class="burger" id="burger" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<main>
+  <section id="hero" class="hero">
+    <img src="images/hero.jpg" alt="Architecture d'intérieur Casablanca" />
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <span class="eyebrow" id="heroCategory">Architecture d'intérieur</span>
+      <h1 id="heroTitle">L'élégance du design,<br/>l'exigence du détail.</h1>
+      <p id="heroSubtitle">Agence de conseil et réalisation en architecture d'intérieur à Casablanca. Nous créons des espaces qui vous ressemblent.</p>
+      <div class="hero-actions">
+        <a href="#contact-form-section" class="btn btn-primary" id="heroCta">Commencer un projet</a>
+        <a href="#services" class="btn btn-ghost">Nos services</a>
+      </div>
+      <div class="hero-rating" id="heroRating"></div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container about-grid two-col">
+      <div>
+        <span class="eyebrow">L'agence</span>
+        <h2>Le sens du détail,<br/>le goût du juste.</h2>
+      </div>
+      <div class="about-content prose" id="aboutContent">
+        <p>Fondée à Casablanca, IMIDECO est née d'une passion pour les espaces qui racontent une histoire. Nous croyons que chaque intérieur doit être le reflet fidèle de ceux qui l'habitent, alliant esthétique intemporelle et fonctionnalité moderne.</p>
+        <p>Notre approche repose sur une écoute attentive et une recherche constante de l'excellence, du choix des matériaux les plus nobles à la supervision rigoureuse des chantiers.</p>
+        <div class="stats">
+          <div><strong>12+</strong><span>Années d'expertise</span></div>
+          <div><strong>150+</strong><span>Projets réalisés</span></div>
+          <div><strong>100%</strong><span>Clients satisfaits</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="section section-muted">
+    <div class="container">
+      <span class="eyebrow">Savoir-faire</span>
+      <h2 class="section-title">Un accompagnement complet,<br/>du concept à la livraison.</h2>
+      <div class="services-grid grid-3" id="servicesGrid">
+        <div class="card">
+          <span class="num">01</span>
+          <h3>Papier Peint</h3>
+          <p>Des textures, des matières et des finitions conçues pour transformer chaque espace.</p>
+        </div>
+        <div class="card">
+          <span class="num">02</span>
+          <h3>Revêtements sol - Gerflex</h3>
+          <p>Un revêtement résistant et moderne, idéal pour des sols techniques et esthétiques.</p>
+        </div>
+        <div class="card">
+          <span class="num">03</span>
+          <h3>Gazon</h3>
+          <p>Un rendu naturel et élégant pour des espaces verts durables sans entretien.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <span class="eyebrow">Portfolio</span>
+      <h2 class="section-title">Nos dernières réalisations.</h2>
+      <div class="gallery">
+        <figure>
+          <img src="images/project1.jpg" alt="Projet 1" />
+          <figcaption>
+            <strong>Villa Anfa</strong>
+            <span>Résidentiel</span>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="images/bureax.avif" alt="Projet 2" />
+          <figcaption>
+            <strong>Bureaux Ghandi</strong>
+            <span>Tertiaire</span>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="images/project3.jpg" alt="Projet 3" />
+          <figcaption>
+            <strong>Appartement Racine</strong>
+            <span>Résidentiel</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="section reviews-section">
+    <div class="container">
+      <div class="reviews-google-header">
+        <h2 class="excellent-title">EXCELLENT</h2>
+        <div class="stars-rating">
+          <span class="stars">★★★★★</span>
+          <span class="rating-text">Basée sur 42 avis</span>
+        </div>
+        <div class="google-logo">
+          <svg viewBox="0 0 24 24" width="80" height="30">
+            <path d="M12 11h8.5c.1.6.2 1.2.2 1.9 0 5.2-3.5 8.9-8.7 8.9-5.4 0-9.8-4.4-9.8-9.8S6.6 2.2 12 2.2c2.6 0 4.8 1 6.5 2.6l-2.7 2.7C14.7 6.4 13.5 6 12 6c-3.3 0-6 2.7-6 6s2.7 6 6 6c3.1 0 5.3-2.1 5.8-4.8H12v-3.2z" fill="#4285F4"/>
+            <path d="M6.2 14.5c-.3-.8-.4-1.7-.4-2.5s.1-1.7-.4-2.5L3.4 7C2.5 8.5 2 10.2 2 12s.5 3.5 1.4 5l2.8-2.5z" fill="#FBBC05"/>
+            <path d="M12 21.8c2.6 0 4.8-.8 6.4-2.3l-2.8-2.3c-.9.6-2.1 1-3.6 1-2.7 0-5.1-1.8-5.9-4.3l-2.8 2.2c1.6 3.3 5 5.7 8.7 5.7z" fill="#34A853"/>
+            <path d="M18.4 4.5c-1.6-1.5-3.8-2.3-6.4-2.3-3.7 0-7.1 2.4-8.7 5.7L6.2 10C7 7.5 9.3 5.7 12 5.7c1.5 0 2.7.4 3.7 1.3l2.7-2.5z" fill="#EA4335"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="reviews-slider-container">
+        <button class="slider-arrow prev" id="prevReview" aria-label="Avis précédent">‹</button>
+        <div class="reviews-slider" id="reviewsSlider">
+          <div class="review-card">
+            <div class="card-header">
+              <div class="user-info">
+                <div class="user-avatar" style="background-color: #f44336;">N</div>
+                <div>
+                  <strong>Naji BFN</strong>
+                  <span class="review-date">il y a 5 mois</span>
+                </div>
+              </div>
+              <div class="google-icon-small">
+                <svg viewBox="0 0 24 24" width="18" height="18"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.9 3.16-1.96 4.2-1.2 1.2-3.08 2.48-6.6 2.48-5.36 0-9.68-4.36-9.68-9.72s4.32-9.72 9.68-9.72c2.88 0 5.16 1.12 6.84 2.76l2.32-2.32C18.44 1.92 15.64 1 12.48 1 5.48 1 0 6.44 0 13.44s5.48 12.44 12.48 12.44c3.8 0 6.84-1.28 9.12-3.64 2.4-2.4 3.16-5.8 3.16-8.52 0-.84-.08-1.64-.2-2.4h-12z" fill="#4285F4"/></svg>
+              </div>
+            </div>
+            <div class="card-rating">
+              <span class="stars-yellow">★★★★★</span>
+              <span class="verified-badge">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="#1A73E8"><path d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.7l-3.61.81.34 3.7L1 12l2.44 2.79-.34 3.69 3.61.82 1.89 3.2L12 21.04l3.4 1.46 1.89-3.2 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z"/></svg>
+              </span>
+            </div>
+            <p class="review-text">"Merci Yassine pour les conseils et l'excellent accompagnement comme d'habitude. Tu assures !"</p>
+            <a href="#" class="read-more">Lire la suite</a>
+          </div>
+          <div class="review-card">
+            <div class="card-header">
+              <div class="user-info">
+                <div class="user-avatar" style="background-color: #E91E63;">S</div>
+                <div>
+                  <strong>Salma Hamra</strong>
+                  <span class="review-date">il y a 8 mois</span>
+                </div>
+              </div>
+              <div class="google-icon-small">
+                <svg viewBox="0 0 24 24" width="18" height="18"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.9 3.16-1.96 4.2-1.2 1.2-3.08 2.48-6.6 2.48-5.36 0-9.68-4.36-9.68-9.72s4.32-9.72 9.68-9.72c2.88 0 5.16 1.12 6.84 2.76l2.32-2.32C18.44 1.92 15.64 1 12.48 1 5.48 1 0 6.44 0 13.44s5.48 12.44 12.48 12.44c3.8 0 6.84-1.28 9.12-3.64 2.4-2.4 3.16-5.8 3.16-8.52 0-.84-.08-1.64-.2-2.4h-12z" fill="#4285F4"/></svg>
+              </div>
+            </div>
+            <div class="card-rating">
+              <span class="stars-yellow">★★★★★</span>
+              <span class="verified-badge">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="#1A73E8"><path d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.7l-3.61.81.34 3.7L1 12l2.44 2.79-.34 3.69 3.61.82 1.89 3.2L12 21.04l3.4 1.46 1.89-3.2 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z"/></svg>
+              </span>
+            </div>
+            <p class="review-text">"Un magasin qui mérite vraiment le détour. Des pièces uniques et de qualité exceptionnelle. Yassine est attentionné, avec des conseils personnalisés et un professionnalisme exemplaire."</p>
+            <a href="#" class="read-more">Lire la suite</a>
+          </div>
+          <div class="review-card">
+            <div class="card-header">
+              <div class="user-info">
+                <div class="user-avatar" style="background-color: #673AB7;">M</div>
+                <div>
+                  <strong>Merwane</strong>
+                  <span class="review-date">il y a 8 mois</span>
+                </div>
+              </div>
+              <div class="google-icon-small">
+                <svg viewBox="0 0 24 24" width="18" height="18"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.9 3.16-1.96 4.2-1.2 1.2-3.08 2.48-6.6 2.48-5.36 0-9.68-4.36-9.68-9.72s4.32-9.72 9.68-9.72c2.88 0 5.16 1.12 6.84 2.76l2.32-2.32C18.44 1.92 15.64 1 12.48 1 5.48 1 0 6.44 0 13.44s5.48 12.44 12.48 12.44c3.8 0 6.84-1.28 9.12-3.64 2.4-2.4 3.16-5.8 3.16-8.52 0-.84-.08-1.64-.2-2.4h-12z" fill="#4285F4"/></svg>
+              </div>
+            </div>
+            <div class="card-rating">
+              <span class="stars-yellow">★★★★★</span>
+              <span class="verified-badge">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="#1A73E8"><path d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.7l-3.61.81.34 3.7L1 12l2.44 2.79-.34 3.69 3.61.82 1.89 3.2L12 21.04l3.4 1.46 1.89-3.2 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z"/></svg>
+              </span>
+            </div>
+            <p class="review-text">"Très satisfait de la qualité du travail réalisé par IMI DECO ! Les équipements ont donné un look exceptionnel à ma maison. L'équipe est professionnelle et respecte les délais."</p>
+            <a href="#" class="read-more">Lire la suite</a>
+          </div>
+          <div class="review-card">
+            <div class="card-header">
+              <div class="user-info">
+                <div class="user-avatar" style="background-color: #4CAF50;">S</div>
+                <div>
+                  <strong>Soukaina Jaadi</strong>
+                  <span class="review-date">il y a 8 mois</span>
+                </div>
+              </div>
+              <div class="google-icon-small">
+                <svg viewBox="0 0 24 24" width="18" height="18"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.9 3.16-1.96 4.2-1.2 1.2-3.08 2.48-6.6 2.48-5.36 0-9.68-4.36-9.68-9.72s4.32-9.72 9.68-9.72c2.88 0 5.16 1.12 6.84 2.76l2.32-2.32C18.44 1.92 15.64 1 12.48 1 5.48 1 0 6.44 0 13.44s5.48 12.44 12.48 12.44c3.8 0 6.84-1.28 9.12-3.64 2.4-2.4 3.16-5.8 3.16-8.52 0-.84-.08-1.64-.2-2.4h-12z" fill="#4285F4"/></svg>
+              </div>
+            </div>
+            <div class="card-rating">
+              <span class="stars-yellow">★★★★★</span>
+              <span class="verified-badge">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="#1A73E8"><path d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.7l-3.61.81.34 3.7L1 12l2.44 2.79-.34 3.69 3.61.82 1.89 3.2L12 21.04l3.4 1.46 1.89-3.2 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z"/></svg>
+              </span>
+            </div>
+            <p class="review-text">"Ravie de mon achat ! Le papier peint est de super qualité, la pose est parfaite et le rendu dépasse mes attentes. Merci pour votre professionnalisme."</p>
+            <a href="#" class="read-more">Lire la suite</a>
+          </div>
+          <div class="review-card">
+            <div class="card-header">
+              <div class="user-info">
+                <div class="user-avatar" style="background-color: #3F51B5;">G</div>
+                <div>
+                  <strong>Ghita Bennis</strong>
+                  <span class="review-date">il y a 1 an</span>
+                </div>
+              </div>
+              <div class="google-icon-small">
+                <svg viewBox="0 0 24 24" width="18" height="18"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.9 3.16-1.96 4.2-1.2 1.2-3.08 2.48-6.6 2.48-5.36 0-9.68-4.36-9.68-9.72s4.32-9.72 9.68-9.72c2.88 0 5.16 1.12 6.84 2.76l2.32-2.32C18.44 1.92 15.64 1 12.48 1 5.48 1 0 6.44 0 13.44s5.48 12.44 12.48 12.44c3.8 0 6.84-1.28 9.12-3.64 2.4-2.4 3.16-5.8 3.16-8.52 0-.84-.08-1.64-.2-2.4h-12z" fill="#4285F4"/></svg>
+              </div>
+            </div>
+            <div class="card-rating">
+              <span class="stars-yellow">★★★★★</span>
+              <span class="verified-badge">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="#1A73E8"><path d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.7l-3.61.81.34 3.7L1 12l2.44 2.79-.34 3.69 3.61.82 1.89 3.2L12 21.04l3.4 1.46 1.89-3.2 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z"/></svg>
+              </span>
+            </div>
+            <p class="review-text">"Excellente expérience ! Mr Yassine est d’un professionnalisme exemplaire. Il a entièrement transformé mon appartement avec un rapport qualité/prix impeccable."</p>
+            <a href="#" class="read-more">Lire la suite</a>
+          </div>
+          <div class="review-card">
+            <div class="card-header">
+              <div class="user-info">
+                <div class="user-avatar" style="background-color: #2196F3;">S</div>
+                <div>
+                  <strong>Sara El Messioui</strong>
+                  <span class="review-date">il y a 1 an</span>
+                </div>
+              </div>
+              <div class="google-icon-small">
+                <svg viewBox="0 0 24 24" width="18" height="18"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.9 3.16-1.96 4.2-1.2 1.2-3.08 2.48-6.6 2.48-5.36 0-9.68-4.36-9.68-9.72s4.32-9.72 9.68-9.72c2.88 0 5.16 1.12 6.84 2.76l2.32-2.32C18.44 1.92 15.64 1 12.48 1 5.48 1 0 6.44 0 13.44s5.48 12.44 12.48 12.44c3.8 0 6.84-1.28 9.12-3.64 2.4-2.4 3.16-5.8 3.16-8.52 0-.84-.08-1.64-.2-2.4h-12z" fill="#4285F4"/></svg>
+              </div>
+            </div>
+            <div class="card-rating">
+              <span class="stars-yellow">★★★★★</span>
+              <span class="verified-badge">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="#1A73E8"><path d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.7l-3.61.81.34 3.7L1 12l2.44 2.79-.34 3.69 3.61.82 1.89 3.2L12 21.04l3.4 1.46 1.89-3.2 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z"/></svg>
+              </span>
+            </div>
+            <p class="review-text">"Absolument ravie du résultat ! Yassine a été très à l’écoute. Je recommande vivement cette société pour une décoration de qualité et un service irréprochable."</p>
+            <a href="#" class="read-more">Lire la suite</a>
+          </div>
+          <div class="review-card">
+            <div class="card-header">
+              <div class="user-info">
+                <div class="user-avatar" style="background-color: #FF9800;">S</div>
+                <div>
+                  <strong>Safaa Sabri</strong>
+                  <span class="review-date">il y a 2 ans</span>
+                </div>
+              </div>
+              <div class="google-icon-small">
+                <svg viewBox="0 0 24 24" width="18" height="18"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.9 3.16-1.96 4.2-1.2 1.2-3.08 2.48-6.6 2.48-5.36 0-9.68-4.36-9.68-9.72s4.32-9.72 9.68-9.72c2.88 0 5.16 1.12 6.84 2.76l2.32-2.32C18.44 1.92 15.64 1 12.48 1 5.48 1 0 6.44 0 13.44s5.48 12.44 12.48 12.44c3.8 0 6.84-1.28 9.12-3.64 2.4-2.4 3.16-5.8 3.16-8.52 0-.84-.08-1.64-.2-2.4h-12z" fill="#4285F4"/></svg>
+              </div>
+            </div>
+            <div class="card-rating">
+              <span class="stars-yellow">★★★★★</span>
+              <span class="verified-badge">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="#1A73E8"><path d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.7l-3.61.81.34 3.7L1 12l2.44 2.79-.34 3.69 3.61.82 1.89 3.2L12 21.04l3.4 1.46 1.89-3.2 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z"/></svg>
+              </span>
+            </div>
+            <p class="review-text">"Excellent service. Produits de haute qualité et Mr Yassine est très professionnel et honnête. L'équipe de pose fait un travail remarquable."</p>
+            <a href="#" class="read-more">Lire la suite</a>
+          </div>
+        </div>
+        <button class="slider-arrow next" id="nextReview" aria-label="Avis suivant">›</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section senior-contact">
+    <div class="container senior-contact-grid">
+      <div class="senior-contact-info">
+        <span class="eyebrow">Contact</span>
+        <h2 class="luxury-serif">IMIDECO</h2>
+        <div class="contact-details">
+          <div class="detail-item">
+            <span class="detail-label">Adresse</span>
+            <p class="detail-value">Nr 66, LOT MESTOUNA RUE 25<br>Casablanca 20000, Maroc</p>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Téléphone</span>
+            <p class="detail-value"><a href="tel:+212661068642">06 61 06 86 42</a></p>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Ouverture</span>
+            <div class="detail-value schedule">
+              <div class="schedule-row"><span>Lundi - Jeudi</span> <span>09:00–13:00, 15:00–19:00</span></div>
+              <div class="schedule-row"><span>Vendredi</span> <span>10:00–13:00, 15:00–19:00</span></div>
+              <div class="schedule-row"><span>Samedi</span> <span>09:00–13:00, 15:00–19:00</span></div>
+              <div class="schedule-row"><span>Dimanche</span> <span>Fermé</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="senior-map-wrapper">
+        <div class="senior-map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3324.466359526798!2d-7.6971403252087836!3d33.567238743185754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7d3108df47203%3A0xb7e499b3e26f5238!2sIMIDECO!5e0!3m2!1sfr!2sma!4v1777858774770!5m2!1sfr!2sma" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact-form-section" class="section section-muted senior-form-section">
+    <div class="container small-container">
+      <div class="senior-contact-form-wrapper">
+        <h3 class="form-title luxury-serif-small">Envoyez-nous un message</h3>
+        <form id="contactForm" class="senior-form">
+          <div class="form-row">
+            <div class="form-group">
+              <input type="text" name="name" id="name" placeholder="Votre Nom" required>
+            </div>
+            <div class="form-group">
+              <input type="tel" name="phone" id="phone" placeholder="Téléphone" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" id="email" placeholder="Email (Optionnel)">
+          </div>
+          <div class="form-group">
+            <textarea name="message" id="message" rows="4" placeholder="Votre message..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Envoyer le message</button>
+          <p id="formMsg" class="form-feedback"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand-side">
+      <a href="#" class="brand" id="footerBrand">IMIDECO</a>
+      <p id="footerTag">Architecte d'intérieur à Casablanca</p>
+    </div>
+    
+    <div class="footer-socials">
+      <a href="https://www.instagram.com/imi.deco/" target="_blank" aria-label="Instagram" class="social-link">
+        <svg viewBox="0 0 448 512" width="20" height="20"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
+      </a>
+      <a href="https://www.tiktok.com/" target="_blank" aria-label="TikTok" class="social-link">
+        <svg viewBox="0 0 448 512" width="18" height="18"><path fill="currentColor" d="M448 209.91a210.06 210.06 0 0 1-122.77-39.25v178.72A162.55 162.55 0 1 1 185 188.31v89.89a74.62 74.62 0 1 0 52.23 71.18V0h88a121.18 121.18 0 0 0 1.86 22.17A122.18 122.18 0 0 0 381 102.39a121.43 121.43 0 0 0 67 20.14z"></path></svg>
+      </a>
+    </div>
+
+    <div class="footer-copyright">
+      <p>© <span id="year"></span> <span id="footerName">IMIDECO</span>. Tous droits réservés.</p>
+    </div>
+  </div>
+</footer>
+
+<div class="whatsapp-widget" id="whatsappWidget">
+  <div class="whatsapp-chat" id="whatsappChat">
+    <div class="chat-header">
+      <div class="header-info">
+        <strong>IMIDECO</strong>
+        <span>En ligne</span>
+      </div>
+      <button class="chat-close" id="chatClose">✕</button>
+    </div>
+    <div class="chat-body">
+      <div class="message">
+        <p>Bonjour ! Comment pouvons-nous vous aider pour votre projet de décoration ?</p>
+      </div>
+    </div>
+    <div class="chat-footer">
+      <a href="https://wa.me/212661068642" target="_blank" class="btn btn-whatsapp">Envoyer un message</a>
+    </div>
+  </div>
+  <button class="whatsapp-trigger" id="whatsappTrigger" aria-label="WhatsApp">
+    <svg viewBox="0 0 448 512" width="24" height="24"><path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-5.5-2.8-23.4-8.6-44.6-27.6-16.5-14.7-27.6-32.8-30.8-38.4-3.2-5.6-.3-8.6 2.5-11.4 2.5-2.5 5.5-6.5 8.3-9.7 2.8-3.3 3.7-5.6 5.6-9.3 1.9-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 13.2 5.8 23.5 9.2 31.5 11.8 13.3 4.2 25.4 3.6 35 2.2 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path></svg>
+  </button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
