@@ -94,6 +94,50 @@ if (slider && prevBtn && nextBtn) {
   });
 }
 
+// Lightbox Logic
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const lightboxVideo = document.getElementById('lightbox-video');
+const lightboxClose = document.querySelector('.lightbox-close');
+const galleryItems = document.querySelectorAll('.gallery-item');
+
+if (lightbox && lightboxClose) {
+  galleryItems.forEach(item => {
+    item.addEventListener('click', () => {
+      const type = item.getAttribute('data-type');
+      const src = item.getAttribute('data-src');
+
+      lightbox.style.display = 'flex';
+      document.body.style.overflow = 'hidden'; // Prevent scroll
+
+      if (type === 'video') {
+        lightboxImg.style.display = 'none';
+        lightboxVideo.style.display = 'block';
+        lightboxVideo.src = src;
+        lightboxVideo.play();
+      } else {
+        lightboxVideo.style.display = 'none';
+        lightboxVideo.pause();
+        lightboxImg.style.display = 'block';
+        lightboxImg.src = src;
+      }
+    });
+  });
+
+  const closeLightbox = () => {
+    lightbox.style.display = 'none';
+    document.body.style.overflow = '';
+    lightboxVideo.pause();
+    lightboxVideo.src = '';
+    lightboxImg.src = '';
+  };
+
+  lightboxClose.addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) closeLightbox();
+  });
+}
+
 // WhatsApp Widget Logic
 const whatsappTrigger = document.getElementById('whatsappTrigger');
 const whatsappChat = document.getElementById('whatsappChat');
