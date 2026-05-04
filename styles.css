@@ -137,9 +137,62 @@ em{font-style:italic;color:var(--accent)}
   box-shadow: 0 4px 20px rgba(0,0,0,0.08);
 }
 
+/* Infinite Gallery Carrousel */
+.gallery-infinite-container {
+  overflow: hidden;
+  width: 100%;
+  padding: 2rem 0;
+  position: relative;
+}
+
+.gallery-track {
+  display: flex;
+  width: max-content;
+  animation: scroll-infinite 40s linear infinite;
+  align-items: flex-start; /* Évite que les items ne s'étirent verticalement */
+}
+
+.gallery-track:hover {
+  animation-play-state: paused;
+}
+
+.gallery-group {
+  display: flex;
+  gap: 1.5rem;
+  padding-right: 1.5rem;
+  align-items: flex-start;
+}
+
+.gallery-item {
+  flex: 0 0 250px;
+  height: 250px; /* Force une hauteur carrée pour le conteneur */
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+@media (max-width: 768px) {
+  .gallery-item {
+    flex: 0 0 200px;
+    height: 200px; /* Ajustement mobile */
+  }
+}
+
+@keyframes scroll-infinite {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 .gallery img,
-.gallery .video-preview-container {
-  aspect-ratio: 4/5;
+.gallery-item img,
+.gallery-item .video-preview-container {
+  aspect-ratio: 1/1; /* Changé de 4/5 à 1/1 pour réduire la hauteur */
   object-fit: cover;
   width: 100%;
   display: block;
@@ -157,7 +210,7 @@ em{font-style:italic;color:var(--accent)}
   object-fit: cover;
 }
 
-.gallery .play-overlay {
+.gallery-item .play-overlay {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -173,17 +226,17 @@ em{font-style:italic;color:var(--accent)}
   z-index: 2;
 }
 
-.gallery figure:hover .play-overlay {
-  background: rgba(var(--accent-rgb, 191, 163, 122), 0.8);
+.gallery-item:hover .play-overlay {
+  background: rgba(191, 163, 122, 0.8);
   transform: translate(-50%, -50%) scale(1.1);
 }
 
-.gallery figure:hover img,
-.gallery figure:hover .video-preview-container {
+.gallery-item:hover img,
+.gallery-item:hover .video-preview-container {
   transform: scale(1.05);
 }
 
-.gallery figcaption {
+.gallery-item figcaption {
   position: absolute;
   left: 0;
   right: 0;
@@ -199,19 +252,19 @@ em{font-style:italic;color:var(--accent)}
   z-index: 3;
 }
 
-.gallery figure:hover figcaption {
+.gallery-item:hover figcaption {
   transform: translateY(0);
   opacity: 1;
 }
 
-.gallery figcaption strong {
+.gallery-item figcaption strong {
   font-family: 'Cormorant Garamond', serif;
   font-weight: 500;
   font-size: 1.4rem;
   margin-bottom: 0.3rem;
 }
 
-.gallery figcaption span {
+.gallery-item figcaption span {
   font-size: 0.75rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
